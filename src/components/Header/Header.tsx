@@ -1,7 +1,6 @@
 import { IoCartOutline, IoHeartOutline, IoPersonOutline, IoSearchOutline } from 'react-icons/io5'
 import shopLogo from '@assets/logo.svg'
 import styles from './header.module.css'
-import { HamburgerMenu } from '@components/BurgerMenu/HamburgerMenu'
 import { useState } from 'react'
 
 export const Header = () => {
@@ -18,7 +17,7 @@ export const Header = () => {
         <p className={styles.headerName}>Furniro</p>
       </div>
 
-      <nav>
+      <nav className={styles.navWrapper}>
           <ul className={styles.navigationItems}>
             <li>Home</li>
             <li>Shop</li>
@@ -26,7 +25,8 @@ export const Header = () => {
             <li>Contact</li>
           </ul>
       </nav>
-        <div>
+
+        <div className={styles.shopItemsWrapper}>
           <ul className={styles.shopItems}>
             <li>
               <a>
