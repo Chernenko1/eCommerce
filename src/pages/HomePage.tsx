@@ -1,6 +1,6 @@
-import { Banner } from '@components/Banner/Banner'
+import { Banner } from '@components/HomePage/Banner/Banner'
 import { Header } from '@components/Header/Header'
-import HomePageCategories from '@components/HomePageCategories/HomePageCategories'
+import HomePageCategories from '@components/HomePage/HomePageCategories/HomePageCategories'
 import React from 'react'
 
 export const HomePage = () => {
