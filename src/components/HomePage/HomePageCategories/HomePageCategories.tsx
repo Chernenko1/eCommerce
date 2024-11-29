@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from 'react'
 
-import CategoriesCard from '@components/CategoriesCard/CategoriesCard'
+import CategoriesCard from '@components/Cards/CategoriesCard/CategoriesCard'
 
 import DiningImg from '@assets/images/Categories/Dining.png'
 import LivingImg from '@assets/images/Categories/Living.png'
