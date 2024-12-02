@@ -1,4 +1,8 @@
+import { useState } from 'react'
+import { IoShareSocialOutline, IoSwapHorizontalOutline, IoHeartOutline } from 'react-icons/io5'
+
 import CardCircle from '@components/SaleCircle/CardCircle'
+
 import styles from './productCard.module.css'
 
 interface IProductCard {
@@ -22,8 +26,10 @@ export default function ProductCard({
   circleText,
   circleColor,
 }: IProductCard) {
+  const [hovered, setHovered] = useState(false)
+
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} onMouseMove={() => setHovered(true)} onMouseOut={() => setHovered(false)}>
       <div className={styles.circle}>{circleText ? <CardCircle text={circleText} color={circleColor} /> : null}</div>
       <img className={styles.image} src={image} />
       <div className={styles.container}>
@@ -37,6 +43,24 @@ export default function ProductCard({
           {oldPrice ? <p className={styles.oldPrice}>{oldPrice}</p> : null}
         </div>
       </div>
+      {hovered && (
+        <div className={styles.hoverOptions}>
+          <button>Add to Cart</button>
+          <div className={styles.links}>
+            <a href='#'>
+              <IoShareSocialOutline /> Share
+            </a>
+
+            <a href='#'>
+              <IoSwapHorizontalOutline color='white' /> Compare
+            </a>
+
+            <a href='#'>
+              <IoHeartOutline color='white' /> Like
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
