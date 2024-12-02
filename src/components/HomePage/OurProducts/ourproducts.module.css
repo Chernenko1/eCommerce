@@ -34,3 +34,18 @@
   color: #B88E2F;
   border: #B88E2F 1px solid;
 }
+
+@media screen and (max-width: 1250px) {
+  .container {
+    grid-template-columns: repeat(3,285px);
+    grid-template-rows: repeat(3, 446px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2,285px);
+    grid-template-rows: repeat(4, 446px);
+  }
+  
+}

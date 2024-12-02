@@ -33,3 +33,9 @@
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .categoriesContainer {
+   display: none
+  }
+}
