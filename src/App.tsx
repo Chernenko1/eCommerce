@@ -1,8 +1,7 @@
-import { HomePage } from '@pages/HomePage'
+import { HomePage } from '@pages/Home/HomePage'
 import './App.css'
 
 function App() {
-
   return (
     <>
       <HomePage />
