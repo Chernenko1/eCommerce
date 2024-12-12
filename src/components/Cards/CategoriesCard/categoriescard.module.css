@@ -33,16 +33,16 @@ box-shadow: -10px -5px 10px rgb(224, 223, 223);
   }
 }
 
-@media screen and (max-width: 500px) {
-  .image {
-    width: 90%;
-    height: 90%;
-  }
-}
 
 @media screen and (max-width: 920px) {
   .image {
     width: 381px;
     height: 480px;
   }
+}
+@media screen and (max-width: 500px) {
+    .image {
+      width: 90%;
+      height: 90%;
+    }
 }

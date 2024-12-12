@@ -48,7 +48,9 @@ export default function OurProducts() {
         />
         <ProductCard currency='BY' title='Potty' price={974} description='Minimalist flower pot' image={Potty} />
       </section>
-      <button className={styles.wrpBtn}>Show more</button>
+      <div className={styles.wrpBtn}>
+        <button>Show more</button>
+      </div>
     </article>
   )
 }
