@@ -7,11 +7,9 @@ import Footer from '@components/Footer/Footer'
 export const HomePage = () => {
   return (
     <>
-      <Header />
       <Banner />
       <HomePageCategories />
       <OurProducts />
-      <Footer />
     </>
   )
 }
