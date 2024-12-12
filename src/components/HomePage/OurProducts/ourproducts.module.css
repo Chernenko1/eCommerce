@@ -19,7 +19,7 @@
 
 .wrapper .wrpBtn {
   position: relative;
-  left: 40%;
+  left: 35%;
   background-color: #B88E2F;
   margin-top: 24px;
   margin-bottom: 10px;
@@ -46,6 +46,14 @@
   .container {
     grid-template-columns: repeat(2,285px);
     grid-template-rows: repeat(4, 446px);
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    grid-template-columns: auto;
+    align-items: center;
   }
   
 }
