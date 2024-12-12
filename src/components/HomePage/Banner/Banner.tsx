@@ -9,7 +9,7 @@ export const Banner = () => {
           <h2>Discover Our New Collection</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
           <div className={styles.button}>
-            <a href='#'>BUY NOW</a>
+            <button type='button'>BUY NOW</button>
           </div>
         </div>
       </div>

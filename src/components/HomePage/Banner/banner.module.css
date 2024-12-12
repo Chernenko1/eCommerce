@@ -18,23 +18,15 @@
     border-radius: 10px;
 }
 
-.button {
-    display: flex;
-    position: relative;
+.button button {
+    width: 228px;
+    height: 74px;
+    margin-top: 25px;
     background-color: #B88E2F;
-    font-weight: bold;
-    padding: 25px 75px;
-    width: 75px;
-    height: 25px;
-    text-align: center;
-    margin-top: 50px
-}
-
-.button a {
-    position: absolute;
-    color: white;
-    outline: none;
-    text-decoration: none;
+    border: none;
+color: white;
+font-weight: 500;
+font-size: 20px;
 }
 
 .containerContent {
@@ -108,23 +100,6 @@
         margin-top: 10px;
     }
     
-    .button {
-        position: relative;
-        background-color: #B88E2F;
-        font-weight: bold;
-        padding: 20px 70px;
-        width: 70px;
-        height: 20px;
-        text-align: center;
-        margin-top: 25px
-    }
-    
-    .button a {
-        position: absolute;
-        color: white;
-        outline: none;
-        text-decoration: none;
-    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -172,49 +147,26 @@
         color: rgb(99, 96, 96);
     }
 }
-@media screen and (max-width: 480px){
-    .bannerWrapper {
-        height: 300px;
-    }
+@media screen and (max-width: 600px){
     .container {
-        position: absolute;
-        background-color: #FFF3E3;
-        width: 80%;
-        height: 70%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 10px;
-    }
-    .containerContent {
-        padding-left: 29px;
-        padding-right: 23px;
-        padding-top: 22px;
-        padding-bottom: 17px;
-    }
-    .button {
         display: flex;
-        position: relative;
-        background-color: #B88E2F;
-        font-weight: bold;
-        width: 10%;
-        height: 10%;
-        align-items: center;
-
-        justify-items: center;
-        margin-top: 25px
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+        width: 100%;
+        height: 100%;
     }
-    
-    .button a {
-        color: white;
-        outline: none;
-        text-decoration: none;
+    .bannerWrapper {
+        background: none;
+        height: 200px;
     }
-
-    .containerContent h2 {
-        font-weight: bold;
-        font-size: 2em;
-        margin-top: 10px;
+    .container h2 {
+        font-size: 25px;
         line-height: 25px;
+    }
+
+    .button button {
+        width: 50%;
+        height: 50%;
     }
 }
