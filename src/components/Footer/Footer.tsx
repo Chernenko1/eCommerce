@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContainer}>
-        <section className={styles.footerSections}>
+        <section>
           <h2>Funiro</h2>
           <p className={styles.footerCopyrights}>
             400 University Drive Suite 200 Coral Gables, <br />
@@ -45,7 +45,7 @@ export default function Footer() {
             </li>
           </ul>
         </section>
-        <section className={styles.footerSections}>
+        <section className={styles.footerSectionsForm}>
           <h4>Newsletters</h4>
           <form className={styles.footerForm}>
             <input type='email' placeholder='Enter Your Email Address' />
