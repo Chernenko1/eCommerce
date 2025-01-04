@@ -57,11 +57,10 @@
     width: 100%;
 }
 
-.shopItems {
+.headerUserToolsWrapper {
     display: flex;
     column-gap: 30px;
 }
-
 
 .shopLogo {
     height: 32px;
@@ -101,24 +100,3 @@
     display: none
    };
 }
-
-/* @media screen and (max-width: 767px) {
-    .hamburger {
-        display: fixed;
-        z-index: 10;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-    .hamburger {
-        display: fixed;
-        z-index: 10;
-    }
-    .navWrapper {
-        display: none
-    }
-    .shopItemsWrapper {
-        display: none
-    }
-} */
