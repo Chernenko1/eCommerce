@@ -3,7 +3,7 @@ import Shop from '@pages/Shop/Shop.tsx'
 import About from '@pages/About/About.tsx'
 import Contact from '@pages/Contact/Contact.tsx'
 import Layout from './Layout/Layout'
-import { HomePage } from '@pages/Home/HomePage'
+import { HomePage } from '@pages/Home'
 
 function App() {
   return (

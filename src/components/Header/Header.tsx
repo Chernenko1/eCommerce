@@ -2,8 +2,8 @@ import { IoCartOutline, IoHeartOutline, IoPersonOutline, IoSearchOutline } from 
 import HeaderUserTools from '@components/HeaderLinks/HeaderUserTools'
 
 import { NavLink } from 'react-router-dom'
-import shopLogo from '@assets/logo.svg'
 import styles from './header.module.css'
+import shopLogo from '@assets/logo.svg'
 
 export const Header = () => {
   return (
