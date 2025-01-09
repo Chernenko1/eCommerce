@@ -1,0 +1,57 @@
+.mainHeaderTop {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+  padding: 10px 10px;
+  border-bottom: #dddddd 1.5px solid;
+}
+
+.mainHeaderPhoneWrapper a {
+  display:flex;
+  align-items: center;
+  column-gap: 5px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: #ffd201 2px solid;
+}
+
+.mainHeaderPhoneWrapper a:hover {
+  border-bottom: #000000 2px solid;
+}
+
+.mainHeaderPhoneWrapper a:active {
+  border-bottom: #919191 2px solid;
+
+}
+
+.mainHeaderSocial {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.mainHeaderSocialMedia {
+  display: flex;
+  column-gap: 15px;
+  position: relative;
+  top: 5px;
+}
+
+.mainHeaderSocialMedia a {
+  color: #777777;
+}
+
+.mainHeaderSocialMedia a:hover {
+  color: #ffd201;
+}
+
+.mainHeaderSocialMedia a:active {
+  color: #ff9901;
+}
+
+.line {
+  background-color: #dddddd;
+  width: 1.5px;
+  height: 180%;
+}
