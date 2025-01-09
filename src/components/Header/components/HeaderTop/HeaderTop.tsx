@@ -13,19 +13,21 @@ export default function HeaderTop() {
       </div>
       <div className={styles.mainHeaderSocial}>
         <p>Unknown city</p>
-        <div className={styles.line}></div>
-        <div className={styles.mainHeaderSocialMedia}>
-          <NavLink to={'#'}>
-            <IoLogoInstagram size={20} />
-          </NavLink>
-          <NavLink to={'#'}>
-            <IoLogoVk size={20} />
-          </NavLink>
-          <NavLink to={'#'}>
-            <IoPaperPlaneOutline size={20} />
-          </NavLink>
+        <div className={styles.line} />
+        <div>
+          <div className={styles.mainHeaderSocialMedia}>
+            <NavLink to={'#'}>
+              <IoLogoInstagram size={20} />
+            </NavLink>
+            <NavLink to={'#'}>
+              <IoLogoVk size={20} />
+            </NavLink>
+            <NavLink to={'#'}>
+              <IoPaperPlaneOutline size={20} />
+            </NavLink>
+          </div>
         </div>
-        <div className={styles.line}></div>
+        <div className={styles.line} />
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 .mainHeaderTop {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-between;
   width: 100%;
   padding: 10px 10px;
   border-bottom: #dddddd 1.5px solid;
@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+  left: 10px;
 }
 
 .mainHeaderSocialMedia {
@@ -51,6 +52,7 @@
 }
 
 .line {
+
   background-color: #dddddd;
   width: 1.5px;
   height: 180%;
