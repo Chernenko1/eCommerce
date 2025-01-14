@@ -1,38 +1,21 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styles from './style.module.css'
-import { IoCall, IoLogoInstagram, IoLogoVk, IoPaperPlaneOutline } from 'react-icons/io5'
-import HorizontalLine from '@components/Lines/HorizontalLine'
 
 export default function HeaderTop() {
   return (
-    <div>
-      <div className={styles.mainHeaderTop}>
-        <div className={styles.mainHeaderPhoneWrapper}>
-          <NavLink to='#'>
-            <IoCall size={20}></IoCall>
-            <p>Order a call</p>
-          </NavLink>
-        </div>
-        <div className={styles.mainHeaderSocial}>
-          <p>Unknown city</p>
-          <div className={styles.line} />
-          <div>
-            <div className={styles.mainHeaderSocialMedia}>
-              <NavLink to={'#'}>
-                <IoLogoInstagram size={20} />
-              </NavLink>
-              <NavLink to={'#'}>
-                <IoLogoVk size={20} />
-              </NavLink>
-              <NavLink to={'#'}>
-                <IoPaperPlaneOutline size={20} />
-              </NavLink>
-            </div>
-          </div>
-          <div className={styles.line} />
-        </div>
+    <div className={styles.topHeaderContainer}>
+      <nav className={styles.headerNavigation}>
+        <Link to={'#'}>Каталог</Link>
+        <Link to={'#'}>Товары в наличии</Link>
+        <Link to={'#'}>Доставка</Link>
+        <Link to={'#'}>Оплата</Link>
+        <Link to={'#'}>Гарантия и возвраты</Link>
+        <Link to={'#'}>Контакты</Link>
+      </nav>
+      <div className={styles.headerSupport}>
+        <button>Заказать звонок</button>
+        <button>+375 (33) 333 23 23</button>
       </div>
-      <HorizontalLine />
     </div>
   )
 }

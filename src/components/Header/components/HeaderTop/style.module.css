@@ -1,65 +1,31 @@
-.mainHeaderTop {
+.topHeaderContainer {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px 10px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px #f7f7f7 solid;
 }
 
-.mainHeaderPhoneWrapper a {
-  display:flex;
-  align-items: center;
-  column-gap: 5px;
-  color: #000000;
+.headerNavigation {
+ font-size: 13px;
+}
+
+.headerNavigation a {
+  font-weight: 500;
+  padding-right: 23px;
+  color: black;
   text-decoration: none;
-  border-bottom: #ffd201 2px solid;
 }
 
-.mainHeaderPhoneWrapper a:hover {
-  border-bottom: #000000 2px solid;
+.headerSupport {
+ 
 }
 
-.mainHeaderPhoneWrapper a:active {
-  border-bottom: #919191 2px solid;
-
-}
-
-.mainHeaderSocial {
-  position: relative;
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-  left: 10px;
-}
-
-.mainHeaderSocialMedia {
-  display: flex;
-  column-gap: 15px;
-  position: relative;
-  top: 5px;
-}
-
-.mainHeaderSocialMedia a {
-  color: #777777;
-}
-
-.mainHeaderSocialMedia a:hover {
-  color: #ffd201;
-}
-
-.mainHeaderSocialMedia a:active {
-  color: #ff9901;
-}
-
-.line {
-  background-color: #dddddd;
-  width: 1.5px;
-  height: 180%;
-}
-
-.longLine {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1.5px;
-  background-color: #dddddd;
+.headerSupport button {
+  background: none;
+  border: none;
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
 }
