@@ -1,7 +1,9 @@
+import PopularCategories from './components/PopularCategories/PopularCategories'
+
 export const HomePage = () => {
   return (
-    <>
-      <div>1</div>
-    </>
+    <main style={{ justifyContent: 'center' }}>
+      <PopularCategories />
+    </main>
   )
 }
