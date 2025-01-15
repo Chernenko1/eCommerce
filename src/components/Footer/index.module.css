@@ -1,0 +1,151 @@
+
+.footerWrapper {
+  margin-top: 50px;
+  border-top: 2px #D9D9D9 solid;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 48px 100px;
+}
+
+
+
+.footerContainer h2, .footerContainer h4 {
+  margin-bottom: 30px;
+}
+
+.footerContainer h4 {
+  color: #9F9F9F;
+  font-weight: 500;
+}
+
+.footerContainer li {
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+
+.footerContainer ul {
+  padding: 0;
+}
+
+.footerRights {
+  border-top: 1px #D9D9D9 solid;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 1px;
+}
+
+.footerRights p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 36px 0;
+  padding-left: 1px;
+}
+
+.footerSections a {
+  user-select: none;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px
+}
+
+.footerSections a::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  content: '';
+  height: 1px;
+  transform: translateX(-50%);
+  transition: 0.1s;
+  background-color: black;
+}
+
+.footerSections a:hover::after {
+  width: 100%;
+}
+
+.footerSections li:active {
+  transform: scale(0.95);
+  color: gray
+}
+
+.footerCopyrights {
+  color: #9F9F9F;
+  font-weight: 400
+}
+
+.footerForm input{
+  border: none;
+  padding: 5px;
+  width: 175px;
+  border-bottom: rgb(110, 110, 110) 2px solid;
+}
+
+.footerForm input:focus {
+  border: none;
+  width: 175px;
+  outline: rgb(110, 110, 110) 2px solid;
+}
+
+.footerForm button {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  border-bottom: rgb(110, 110, 110) 2px solid;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footerForm button:active {
+  scale: 0.85
+}
+
+@media screen and (max-width: 1124px) {
+  .footerSections {
+    display: none;
+  }
+  .footerSectionsForm h4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .footerContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footerRights {
+    border: none;
+    margin: 0;
+  }
+
+  .footerRights p {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footerContainer h2, p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .footerForm {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .footerRights {
+
+  }
+}
+

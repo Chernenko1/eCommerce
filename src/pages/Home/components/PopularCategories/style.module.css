@@ -1,0 +1,66 @@
+.popularCategoriesContainer {
+  margin-top: 80px;
+  padding: 0 10px;
+}
+
+.categoriesTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.categoriesTitle h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.categoriesTitle a {
+  position: relative;
+  top: 9px;
+  text-decoration: none;
+  color: black;
+}
+
+.categoriesTitle a::after {
+  content: '-->';
+  padding: 0 10px;
+  color: #ffd201;
+}
+
+.popularCategories{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-columns: max-content;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+@media screen and (max-width: 1000px){
+  .popularCategories {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popularCategories {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .categoriesTitle {
+    justify-content: space-between;
+  }
+
+  .categoriesTitle a {
+    top: 0;
+    font-size: 15px;
+  }
+
+  .categoriesTitle h1 {
+    font-size: 1.2rem;
+  }
+}

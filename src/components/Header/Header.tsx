@@ -1,66 +1,20 @@
-import { IoCartOutline, IoHeartOutline, IoPersonOutline, IoSearchOutline } from 'react-icons/io5'
-import shopLogo from '@assets/logo.svg'
 import styles from './header.module.css'
-import { useState } from 'react'
+import shopLogo from '@assets/logo.svg'
+
+import HeaderTop from './components/HeaderTop/HeaderTop'
+import HeaderCenter from './components/HeaderCenter/HeaderCenter'
+import PhoneHeader from './components/PhoneHeader/PhoneHeader'
 
 export const Header = () => {
-  const [hambergerOpen, setHamburgerOpen] = useState(false)
-
-  const toggleHamburger = () => {
-    setHamburgerOpen(!hambergerOpen)
-  }
-
   return (
-    <header className={styles.header}>
-      <div className={styles.headerLogo}>
-        <img src={shopLogo} className={styles.shopLogo} />
-        <p className={styles.headerName}>Furniro</p>
+    <header className={styles.container}>
+      <div className={styles.normalScreenHeader}>
+        <HeaderTop />
+        <HeaderCenter />
       </div>
-
-      <nav className={styles.navWrapper}>
-        <ul className={styles.navigationItems}>
-          <li>
-            <a href='#'>Home</a>
-          </li>
-          <li>
-            <a href='#'>Shop</a>
-          </li>
-          <li>
-            <a href='#'>About</a>
-          </li>
-          <li>
-            <a href='#'>Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div className={styles.shopItemsWrapper}>
-        <ul className={styles.shopItems}>
-          <li>
-            <a>
-              <IoPersonOutline size={28} />
-            </a>
-          </li>
-          <li>
-            <a>
-              <IoHeartOutline size={28} />
-            </a>
-          </li>
-          <li>
-            <a>
-              <IoSearchOutline size={28} />
-            </a>
-          </li>
-          <li>
-            <a>
-              <IoCartOutline size={28} />
-            </a>
-          </li>
-        </ul>
+      <div className={styles.phoneHeader}>
+        <PhoneHeader />
       </div>
-      {/* <div className={styles.hamburger} onClick={toggleHamburger}>
-        <HamburgerMenu />
-      </div> */}
     </header>
   )
 }
