@@ -14,7 +14,7 @@ export default function HeaderTop() {
       </nav>
       <div className={styles.headerSupport}>
         <button>Заказать звонок</button>
-        <button>+375 (33) 333 23 23</button>
+        <button className={styles.supBth}>+375 (33) 333 23 23</button>
       </div>
     </div>
   )
