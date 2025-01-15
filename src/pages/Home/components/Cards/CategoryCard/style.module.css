@@ -1,0 +1,21 @@
+.categoryPopularCard a {
+  text-align: center;
+  text-decoration: none;
+  color: black
+}
+
+.categoryPopularCard p {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+.categoryPopularCard img{
+  width: 100%;
+  min-width: 200px;
+}
+
+.categoryPopularCard:hover {
+  box-shadow: 2px 2px 5px#dddddd
+}
