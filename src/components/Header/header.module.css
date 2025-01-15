@@ -1,5 +1,18 @@
-.mainHeader {
-    position: relative;
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 1300px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .phoneHeader {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .normalScreenHeader {
+        display: none
+    }
 }
