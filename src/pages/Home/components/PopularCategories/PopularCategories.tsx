@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import styles from './style.module.css'
 import CategoryCard from '../Cards/CategoryCard/CategoryCard'
-import StockImg from '@assets/images/Categories/Bedroom.png'
+import StockImg from '@assets/images/Categories/213.jpeg'
 
 export default function () {
   return (
