@@ -1,4 +1,4 @@
-interface IPRODUCTS {
+export interface IPRODUCTS {
   img: string | null;
   title: string;
   shortDescription?: string;
