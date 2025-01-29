@@ -1,4 +1,5 @@
 .phoneHeaderContainer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,8 +8,8 @@
 }
 
 .phoneHeaderContainer img {
-  width: 150px;
-  height: 35px;
+  width: 140px;
+  height: 30px;
 }
 
 .icon {
