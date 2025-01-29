@@ -5,6 +5,7 @@ import { IoCallOutline, IoCartOutline, IoMenuOutline, IoSearchOutline } from 're
 import LogoIMG from '@assets/logo.png'
 import styles from './style.module.css'
 import { Link } from 'react-router-dom'
+import BurgerMenu from '../BurgerMenu/BurgerMenu'
 
 export default function PhoneHeader() {
   return (
@@ -25,6 +26,9 @@ export default function PhoneHeader() {
         <Link to={'#'}>
           <IoCallOutline size={35} className={styles.icon} />
         </Link>
+      </div>
+      <div>
+        <BurgerMenu />
       </div>
     </div>
   )
