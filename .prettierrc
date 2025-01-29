@@ -9,5 +9,8 @@
     "trailingComma": "all",
     "bracketSpacing": true,
     "arrowParens": "always",
-    "endOfLine": "auto"
+    "endOfLine": "auto",
+    "importOrder": [ "^components/(.*)$", "^[./]" ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
   }

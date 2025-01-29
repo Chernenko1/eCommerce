@@ -1,0 +1,37 @@
+.phoneHeaderContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #f7f7f7  1px solid;
+  padding: 15px 0;
+}
+
+.phoneHeaderContainer img {
+  width: 140px;
+  height: 30px;
+}
+
+.icon {
+  color: #777777
+}
+
+.phoneHeaderIcons {
+  display: flex;
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .phoneHeaderIcons {
+    column-gap: 5px;
+  }
+
+  .phoneHeaderContainer img {
+    width: 110px;
+    height: 22px;
+  }
+}

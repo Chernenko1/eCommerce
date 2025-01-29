@@ -1,0 +1,19 @@
+.container {
+  position: absolute;
+  max-width: 768px;
+  min-width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+
+.navigationContainer nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
