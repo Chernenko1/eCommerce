@@ -1,20 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import ProductCard from '@components/Cards/ProductCard/ProductCard'
 
 import styles from './styles.module.css'
-import { SALEPRODUCTS } from '@utils/FakeData/products'
+import { IPRODUCTS, SALEPRODUCTS } from '@utils/FakeData/products'
 
 export default function SalesCategory() {
-  let dataget = new Promise((res, rej) => setTimeout(() => res(SALEPRODUCTS), 5000))
+  const [saleProd, setSaleProd] = useState<IPRODUCTS>()
+
+  let dataget = new Promise((res) => setTimeout(() => res(SALEPRODUCTS), 5000))
 
   async function fakeGET() {
-    let resolve = await dataget
-    console.log(resolve)
+    let resolve: IPRODUCTS = (await dataget) as IPRODUCTS
+    setSaleProd(resolve)
   }
 
-  fakeGET()
+  useEffect(() => {
+    fakeGET()
+  }, [])
 
   return (
     <div>
@@ -22,17 +26,21 @@ export default function SalesCategory() {
         <h1>Скидки</h1>
         <Link to={'#'}>Все товары со скидками</Link>
       </div>
-      <div className={styles.productsContainer}>
-        {SALEPRODUCTS.map((item) => (
-          <ProductCard
-            description={item.description}
-            img={item.img}
-            price={item.price}
-            shortDescription={item.shortDescription}
-            title={item.title}
-          />
-        ))}
-      </div>
+      {saleProd ? (
+        <div className={styles.productsContainer}>
+          {SALEPRODUCTS.map((item) => (
+            <ProductCard
+              description={item.description}
+              img={item.img}
+              price={item.price}
+              shortDescription={item.shortDescription}
+              title={item.title}
+            />
+          ))}
+        </div>
+      ) : (
+        <div>Loading...</div>
+      )}
     </div>
   )
 }
