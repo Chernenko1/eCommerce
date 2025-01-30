@@ -1,0 +1,100 @@
+.container {
+  box-sizing: border-box;
+  white-space: unset;
+  text-wrap: pretty;
+  padding: 20px;
+}
+
+.container:hover {
+  border: #ffd201 1px solid;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.headerContainer {
+  cursor: pointer;
+}
+
+.cardHeader h1 {
+  font-weight: 700;
+
+}
+
+.cardHeader h1 {
+  margin-top: 5px;
+}
+
+.cardHeader h4 {
+  margin-top: 5px;
+}
+
+.cardHeader p {
+  text-wrap: pretty;  
+  margin-top: 5px;
+  line-height: 20px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.priceContainer .price {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.priceContainer .salePrice {
+  font-size: 15px;
+  color: #777777;
+  text-decoration: line-through;
+}
+
+.cartContainer {
+  display: flex;
+  margin-top: 50px;
+  column-gap: 20px;
+}
+
+.cartContainer form {
+  display: flex;
+  align-items: center;
+}
+
+.cartContainer form button {
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.cartContainer form input {
+  width: 20%;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  border: none
+}
+
+.cartContainer .cartButton {
+  padding: 10px 10px;
+  background-color: #ffd201;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.cartContainer .cartButton:hover {
+  background-color: #ff9901;
+  color: white;
+}
