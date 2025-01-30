@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import ProductCard from '@components/Cards/ProductCard/ProductCard'
-
-import styles from './styles.module.css'
 import { IPRODUCTS, SALEPRODUCTS } from '@utils/FakeData/products'
+
+import I from '@assets/images/Products/toy.jpg'
+import styles from './styles.module.css'
 
 export default function SalesCategory() {
   const [saleProd, setSaleProd] = useState<IPRODUCTS>()
@@ -31,8 +32,9 @@ export default function SalesCategory() {
           {SALEPRODUCTS.map((item) => (
             <ProductCard
               description={item.description}
-              img={item.img}
+              img={I}
               price={item.price}
+              salePrice={item.salePrice}
               shortDescription={item.shortDescription}
               title={item.title}
             />
