@@ -24,3 +24,11 @@
   padding: 0 10px;
   color: #ffd201;
 }
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: 550px;
+  column-gap: 20px;
+  row-gap: 40px;
+}
