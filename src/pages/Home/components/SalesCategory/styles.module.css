@@ -28,7 +28,18 @@
 .productsContainer {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-template-rows: 550px;
   column-gap: 20px;
   row-gap: 40px;
+}
+
+@media screen and (max-width: 1200px){
+  .productsContainer {
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .productsContainer {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
 }

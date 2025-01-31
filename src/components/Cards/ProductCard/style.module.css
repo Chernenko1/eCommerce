@@ -74,6 +74,11 @@
   border: none;
   padding: 7px;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.cartContainer form button:hover {
+  background: #f7f7f7;
 }
 
 .cartContainer form input {
@@ -83,6 +88,19 @@
   text-align: center;
   border: none
 }
+
+.cartContainer form 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.cartContainer form input:disabled {
+  background: none;
+  color: black
+}
+
 
 .cartContainer .cartButton {
   padding: 10px 10px;
@@ -98,3 +116,14 @@
   background-color: #ff9901;
   color: white;
 }
+
+
+@media screen and (max-width: 600px){
+  .cartContainer form {
+    display: none;
+  }
+  .cartContainer .cartButton {
+    width: 100%;
+  }
+  
+} 
