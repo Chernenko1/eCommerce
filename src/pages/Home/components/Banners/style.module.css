@@ -1,0 +1,67 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: 1fr 260px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.bigBanner {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(243, 235, 228, 0.589);
+  grid-column: 1 / 6;
+}
+
+.bigBanner div {
+  padding: 60px 40px;
+}
+
+.bigBanner div p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 25px;
+}
+
+.bigBanner h2 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.littleBanner {
+  background-color: rgba(243, 235, 228, 0.589);
+  padding: 30px 30px;
+}
+
+.littleBanner div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.littleBanner div h4 {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.littleBanner div svg {
+  color: rgba(235, 199, 166, 0.973);
+}
+
+.littleBanner ul {
+ margin-top: 30px;
+ padding-left: 15px;
+}
+
+.littleBanner li {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.littleBanner p {
+ margin-top: 30px;
+ font-size: 14px;
+ font-weight: 500;
+}
