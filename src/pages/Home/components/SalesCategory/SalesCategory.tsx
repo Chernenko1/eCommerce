@@ -29,8 +29,9 @@ export default function SalesCategory() {
       </div>
       {saleProd ? (
         <div className={styles.productsContainer}>
-          {SALEPRODUCTS.map((item) => (
+          {SALEPRODUCTS.map((item, index) => (
             <ProductCard
+              key={index}
               description={item.description}
               img={I}
               price={item.price}
