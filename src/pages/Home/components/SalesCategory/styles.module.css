@@ -4,6 +4,7 @@
   align-items: center;
   column-gap: 20px;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .categoriesTitle h1 {
@@ -30,6 +31,21 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   column-gap: 20px;
   row-gap: 40px;
+}
+
+.productsButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.productsButton button {
+  background-color: #ffd201;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 1200px){
