@@ -24,3 +24,9 @@
 .sectionDescp li {
   padding: 15px 0;
 }
+
+.sectionDescp ul {
+  position: relative;
+  padding: 15px 0;
+  left: 40px;
+}
