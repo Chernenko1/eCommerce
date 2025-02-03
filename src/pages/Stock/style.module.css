@@ -1,3 +1,14 @@
+.stockHeader {
+  margin-top: 50px;
+  border-bottom: 1px #ffd201 solid;
+  padding-bottom: 20px;
+} 
+
+.stockHeader h1 {
+  font-weight: 700;
+}
+
+
 .categoriesTitle {
   position: relative;
   display: flex;

@@ -8,26 +8,24 @@ export default function Footer() {
     <footer className={styles.footerWrapper}>
       <div className={styles.footerContainer}>
         <section>
-          <h2>Funiro</h2>
+          <h2>@Name@</h2>
           <p className={styles.footerCopyrights}>
-            400 University Drive Suite 200 Coral Gables, <br />
-            FL 33134 USA
+            Все права защищены © 2025
+            <br />
+            интернет-магазин @Name@ Беларусь
           </p>
         </section>
         <section className={styles.footerSections}>
-          <h4>Links</h4>
+          <h4>Меню</h4>
           <ul>
             <li>
-              <NavLink to={'/'}>Home</NavLink>
+              <NavLink to={'#'}>Каталог</NavLink>
             </li>
             <li>
-              <NavLink to={'/Shop'}>Shop</NavLink>
+              <NavLink to={'#'}>Товары в наличии</NavLink>
             </li>
             <li>
-              <NavLink to={'/About'}>About</NavLink>
-            </li>
-            <li>
-              <NavLink to={'/Contact'}>Contact</NavLink>
+              <NavLink to={'#'}>Доставка</NavLink>
             </li>
           </ul>
         </section>
@@ -35,26 +33,23 @@ export default function Footer() {
           <h4>Help</h4>
           <ul>
             <li>
-              <NavLink to={'#'}>Payment Options</NavLink>
+              <NavLink to={'#'}>Гарантия и возвраты</NavLink>
             </li>
             <li>
-              <NavLink to={'/Shop'}>Returns</NavLink>
+              <NavLink to={'#'}>Контакты</NavLink>
             </li>
             <li>
-              <NavLink to={'/About'}>Privacy Pulicies</NavLink>
+              <NavLink to={'#'}>Оплата</NavLink>
             </li>
           </ul>
         </section>
-        <section className={styles.footerSectionsForm}>
-          <h4>Newsletters</h4>
-          <form className={styles.footerForm}>
-            <input type='email' placeholder='Enter Your Email Address' />
-            <button type='button'>SUBSCRIBE</button>
-          </form>
-        </section>
       </div>
       <div className={styles.footerRights}>
-        <p>2023 furino. All rights reverved</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nulla veniam. Repellat quis ab a quibusdam
+          tenetur, possimus suscipit expedita nobis blanditiis maxime deleniti accusantium minima aspernatur ipsum
+          cumque autem?
+        </p>
       </div>
     </footer>
   )

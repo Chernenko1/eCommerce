@@ -1,0 +1,32 @@
+.dlCnHeader {
+  margin-top: 50px;
+}
+
+.deliveryContainer .dlCnHeader h1 {
+  font-weight: 700;
+}
+
+
+.deliverySection h4 {
+  border-bottom: 1px #ffd201 solid;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.deliveryContainer .sectionDescp {
+  margin: 30px 0;
+}
+
+.sectionDescp p {
+  padding: 10px 0;
+}
+
+.sectionDescp li {
+  padding: 15px 0;
+}
+
+.sectionDescp ul {
+  position: relative;
+  padding: 15px 0;
+  left: 40px;
+}
