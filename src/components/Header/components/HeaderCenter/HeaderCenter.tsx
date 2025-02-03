@@ -8,7 +8,7 @@ export default function HeaderCenter() {
   return (
     <div className={styles.headerCenterContainer}>
       <div className={styles.logoContainer}>
-        <Link to={'#'}>
+        <Link to={''}>
           <img alt='Logo' src={LogoSVG} className={styles.logo} />
         </Link>
       </div>
