@@ -10,7 +10,7 @@ import styles from './styles.module.css'
 export default function SalesCategory() {
   const [saleProd, setSaleProd] = useState<IPRODUCTS>()
 
-  let dataget = new Promise((res) => setTimeout(() => res(SALEPRODUCTS), 5000))
+  let dataget = new Promise((res) => setTimeout(() => res(SALEPRODUCTS), 1000))
 
   async function fakeGET() {
     let resolve: IPRODUCTS = (await dataget) as IPRODUCTS
@@ -28,18 +28,23 @@ export default function SalesCategory() {
         <Link to={'#'}>Все товары со скидками</Link>
       </div>
       {saleProd ? (
-        <div className={styles.productsContainer}>
-          {SALEPRODUCTS.map((item, index) => (
-            <ProductCard
-              key={index}
-              description={item.description}
-              img={I}
-              price={item.price}
-              salePrice={item.salePrice}
-              shortDescription={item.shortDescription}
-              title={item.title}
-            />
-          ))}
+        <div className={styles.productsWrapper}>
+          <div className={styles.productsContainer}>
+            {SALEPRODUCTS.map((item, index) => (
+              <ProductCard
+                key={index}
+                description={item.description}
+                img={I}
+                price={item.price}
+                salePrice={item.salePrice}
+                shortDescription={item.shortDescription}
+                title={item.title}
+              />
+            ))}
+          </div>
+          <div className={styles.productsButton}>
+            <button>Все товары со скидками</button>
+          </div>
         </div>
       ) : (
         <div>Loading...</div>
