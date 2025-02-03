@@ -8,6 +8,7 @@ export const HomePage = () => {
       <PopularCategories />
       <SalesCategory />
       <Banners />
+      <SalesCategory />
     </main>
   )
 }
