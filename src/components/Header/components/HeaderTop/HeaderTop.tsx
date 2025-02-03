@@ -6,10 +6,10 @@ export default function HeaderTop() {
     <div className={styles.topHeaderContainer}>
       <nav className={styles.headerNavigation}>
         <Link to={'#'}>Каталог</Link>
-        <Link to={'#'}>Товары в наличии</Link>
-        <Link to={'#'}>Доставка</Link>
-        <Link to={'#'}>Оплата</Link>
-        <Link to={'#'}>Гарантия и возвраты</Link>
+        <Link to={'stock'}>Товары в наличии</Link>
+        <Link to={'delivery'}>Доставка</Link>
+        <Link to={'payment'}>Оплата</Link>
+        <Link to={'warranty'}>Гарантия и возвраты</Link>
         <Link to={'#'}>Контакты</Link>
       </nav>
       <div className={styles.headerSupport}>
